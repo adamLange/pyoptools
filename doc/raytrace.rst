@@ -48,7 +48,7 @@ the edges, so it is better to define an edge surface::
 
 Now with all the required surfaces, we can assemble the lens::
 
-    In [5]: L1=Component(surflist=[(S1, (0, 0, -5), (0, 0, 0)), (S2, (0, 0, 5), (0, pi, 0)), (S3,(0,0,.509),(0,0,0))], material=schott["BK7"])
+    In [5]: L1=Component(surflist=[(S1, (0, 0, -5), (0, 0, 0)), (S2, (0, 0, 5), (0, pi, 0)), (S3,(0,0,.509),(0,0,0))], material=get_material("BK7"))
 
 The class :class:`pyoptools.raytrace.component.Component` receive in its 
 constructor 2 arguments:
